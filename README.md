@@ -1,10 +1,11 @@
+```
                       _           _        
                      | |         | |       
   ___ ___  _ __ _ __ | |__   ___ | | ___   
  / __/ _ \| '__| '_ \| '_ \ / _ \| |/ _ \  
 | (_| (_) | |  | | | | | | | (_) | |  __/  
  \___\___/|_|  |_| |_|_| |_|\___/|_|\___|  
-
+```
 
 This repository contains components associated to an intelligent cornhole game.
 
