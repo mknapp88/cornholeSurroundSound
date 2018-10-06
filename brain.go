@@ -18,6 +18,10 @@ import (
 
 var logLevel = 1
 
+func index(w http.ResponseWriter, r *http.Request) {
+        fmt.Fprintf(w, "This has not been implented yet")
+}
+
 func health(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "UP")
 }
@@ -32,7 +36,8 @@ func main() {
 	mux := http.NewServeMux()
 
 	hostPort := net.JoinHostPort("0.0.0.0", *port)
-
+        
+	mux.HandleFunc("/", index)
 	mux.HandleFunc("/health", health)
 	log.Printf("Serving requests on HTTP port: %s\n", *port)
 
